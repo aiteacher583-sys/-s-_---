@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ʜᴜsᴇ_ᴛᴇᴄʜ-ᴍᴅ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .image-container {
+            margin: 40px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        .btn-deploy {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-deploy:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #683a94 100%);
+        }
+
+        .btn-fork {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-fork:hover {
+            background: linear-gradient(135deg, #e080ea 0%, #e3445a 100%);
+        }
+
+        .btn-github {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .btn-github:hover {
+            background: linear-gradient(135deg, #3d9cec 0%, #00e0ec 100%);
+        }
+
+        .btn-star {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        .btn-star:hover {
+            background: linear-gradient(135deg, #f89089 0%, #fdd830 100%);
+        }
+
+        .icon {
+            font-size: 1.2em;
+        }
+
+        .description {
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .title {
+                font-size: 2em;
+            }
+
+            .buttons-container {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">ʜᴜsᴇ_ᴛᴇᴄʜ-ᴍᴅ</div>
+        <p class="subtitle">Welcome to an Amazing Project</p>
+
+        <div class="image-container">
+            <img src="https://files.catbox.moe/jx4rr3.png" alt="Project Image">
+        </div>
+
+        <div class="buttons-container">
+            <a href="https://heroku.com/deploy" class="btn btn-deploy" target="_blank">
+                <span class="icon">🚀</span>
+                Deploy to Heroku
+            </a>
+            <a href="https://github.com/aiteacher583-sys/-s-_---/fork" class="btn btn-fork" target="_blank">
+                <span class="icon">🍴</span>
+                Fork Project
+            </a>
+            <a href="https://github.com/aiteacher583-sys/-s-_---" class="btn btn-github" target="_blank">
+                <span class="icon">⭐</span>
+                View on GitHub
+            </a>
+            <a href="https://github.com/aiteacher583-sys/-s-_---/issues" class="btn btn-star" target="_blank">
+                <span class="icon">📝</span>
+                Open Issues
+            </a>
+        </div>
+
+        <div class="description">
+            <p>A modern, stylish landing page with one-click deployment options. Built with pure HTML & CSS.</p>
+        </div>
+
+        <footer>
+            <p>© 2026 ʜᴜsᴇ_ᴛᴇᴄʜ-ᴍᴅ | Created with 💜</p>
+        </footer>
+    </div>
+</body>
+</html>
